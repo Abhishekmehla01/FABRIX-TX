@@ -66,7 +66,7 @@ bool dump()
     return 1;
 
   QTextStream regfwout(&regfw);
-  regfwout << "id;shortname;manufacturer;buildopts;lcd;cpu;modelimg;intmodelrs\n";
+  regfwout << "id;shortname;manufacturer;buildopts;lcd;cpu;modelimg\n";
 
   QFile fwcap("fwcap.txt");
   if (!fwcap.open(QIODevice::WriteOnly | QIODevice::Text))
@@ -113,7 +113,6 @@ bool dump()
                << ";" << (Boards::getCapability(firmware->getBoard(), Board::HasColorLcd) ? "color" : "bw")
                << ";" << cpu
                << ";" << firmware->getCapability(HasModelImage)
-               << ";" << firmware->getCapability(HasIntModuleELRS)
                << "\n";
 
       for (int i = 0; i < CapabilityCount; i++) {
