@@ -45,8 +45,8 @@ class Firmware
     struct CurvesDefn {
       Json::sizes_t sizes       {CPN_MAX_CURVES, CURVEDATA_NAME_LEN};
       int           minPoints   {2};
-      int           maxPoints   {CPN_MAX_POINTS};
-      int           totalPoints {512};
+      int           maxPoints   {CPN_MAX_CURVE_POINTS};
+      int           totalPoints {CPN_MAX_CURVE_POINTS_TOTAL};   // Note: less than CPN_MAX_CURVES x CPN_MAX_POINTS
 
       CurvesDefn() = default;
     };

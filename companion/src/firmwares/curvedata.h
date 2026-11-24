@@ -48,7 +48,7 @@ class CurveData {
     CurveType type;
     bool smooth;
     int  count;
-    CurvePoint points[CPN_MAX_POINTS];
+    CurvePoint points[CPN_MAX_CURVE_POINTS];
     char name[CURVEDATA_NAME_LEN + 1];
 
     void clear(int count = 5);

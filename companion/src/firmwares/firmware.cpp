@@ -276,7 +276,7 @@ int Firmware::getCapability(Capability value) const
       return m_defn.curves.sizes.cnt;
 
     case Capability::NumCurvePoints:
-      return 512; // Note: less than CPN_MAX_CURVES x CPN_MAX_POINTS
+      return m_defn.curves.totalPoints;
 
     case Capability::OffsetWeight:
       return 500;
@@ -669,10 +669,11 @@ void Firmware::loadCurves(QJsonObject::const_iterator & oit)
           crv.minPoints = Json::valueInt(pit, crv.minPoints, 2);
 
         else if (pit.key() == "max")
-          crv.maxPoints = Json::valueInt(pit, crv.maxPoints, CPN_MAX_POINTS);
+          crv.maxPoints = Json::valueInt(pit, crv.maxPoints, CPN_MAX_CURVE_POINTS);
 
         else if (pit.key() == "total")
-          crv.totalPoints = Json::valueInt(pit, crv.totalPoints, 512);
+          crv.totalPoints = Json::valueInt(pit, crv.totalPoints, CPN_MAX_CURVE_POINTS_TOTAL);
+
         else
         JSON_NO_RULE(pit);
       }
