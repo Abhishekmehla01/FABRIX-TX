@@ -2,9 +2,6 @@
     "basedOn": [
         "color"
     ],
-    "channels": {
-        "name": 6
-    },
     "expos": {
         "name": 6
     },
@@ -18,6 +15,9 @@
     },
     "modelName": 15,
     "name": "PL18",
+    "outputs": {
+        "name": 6
+    },
     "quickMenuFavs": 12,
     "sensors": 60,
     "timers": {

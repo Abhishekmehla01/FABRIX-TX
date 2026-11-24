@@ -3,9 +3,6 @@
         "color",
         "cpuh7"
     ],
-    "channels": {
-        "name": 6
-    },
     "expos": {
         "name": 6
     },
@@ -19,6 +16,9 @@
     },
     "modelName": 15,
     "name": "TX16S MK3",
+    "outputs": {
+        "name": 6
+    },
     "quickMenuFavs": 12,
     "sensors": 99,
     "timers": {

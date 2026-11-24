@@ -946,7 +946,7 @@ void Firmware::buildJson()
 
     QJsonDocument doc(obj);
 
-    QFile defn(QString("/utils/edgetx/vscode/fwdefs/%1.json").arg(regfwrec[regfwheader.indexOf("hwdef")]));
+    QFile defn(QString("/src/repos/edgetx/edgetx/companion/src/firmwares/defs/%1.json").arg(regfwrec[regfwheader.indexOf("hwdef")]));
 
     if (defn.open(QIODevice::WriteOnly | QIODevice::Text)) {
       defn.write(doc.toJson(QJsonDocument::Indented));

@@ -1,6 +1,7 @@
 {
     "basedOn": [
-        "bw"
+        "bw",
+        "switches_flex"
     ],
     "battery": {
         "vmax": 80,
@@ -16,7 +17,7 @@
         {
             "internal": {
                 "available": [
-                    "crsf",
+                    "elrs",
                     "multi"
                 ],
                 "default": "crsf"

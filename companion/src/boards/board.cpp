@@ -1883,6 +1883,12 @@ bool Board::postLoad()
       m_hardware.internalModules.dflt == "")
     m_hardware.internalModules.dflt = m_hardware.internalModules.available.at(0);
 
+  // hwdefn json files do not normally specify stick labels so load legacy labels
+  for (auto &defn : m_inputs) {
+    if (defn.type == Board::AIT_STICK && defn.name.empty())
+      defn.name = DataHelpers::getStringTagMappingName(stickNamesLookupTable, defn.tag.c_str());
+  }
+
   // Set default labels for LUX inputs if not provided by JSON
   for (auto &defn : m_inputs) {
     if (defn.type == Board::AIT_LUX) {
@@ -1893,13 +1899,37 @@ bool Board::postLoad()
     }
   }
 
-  // hwdefn json files do not normally specify stick labels so load legacy labels
-  for (auto &defn : m_inputs) {
-    if (defn.type == Board::AIT_STICK && defn.name.empty())
-      defn.name = DataHelpers::getStringTagMappingName(stickNamesLookupTable, defn.tag.c_str());
+  // TODO json files do not contain gyro defs
+  // Radio cmake directive IMU is currently used
+  if (getCapability(Capability::HasIMU)) {
+    if (getInputIndex("TILT_X", Board::LVT_TAG) < 0) {
+      InputDefn defn;
+      defn.type = AIT_FLEX;
+      defn.tag = "TILT_X";
+      defn.name = "Tltx";
+      defn.shortName = "X";
+      defn.flexType = FLEX_AXIS_X;
+      defn.inverted = false;
+      defn.cfgYaml = Board::LVT_TAG;
+      defn.refYaml = Board::LVT_TAG;  //  non-default
+      m_inputs.insert(m_inputs.end(), defn);
+    }
+
+    if (getInputIndex("TILT_Y", Board::LVT_TAG) < 0) {
+      InputDefn defn;
+      defn.type = AIT_FLEX;
+      defn.tag = "TILT_Y";
+      defn.name = "Tlty";
+      defn.shortName = "Y";
+      defn.flexType = FLEX_AXIS_Y;
+      defn.inverted = false;
+      defn.cfgYaml = Board::LVT_TAG;
+      defn.refYaml = Board::LVT_TAG;  //  non-default
+      m_inputs.insert(m_inputs.end(), defn);
+    }
   }
 
-  // nust do last
+  // must do last
   setInputCounts();
   setSwitchCounts();
   return true;
@@ -2089,16 +2119,33 @@ void Board::buildJson()
   const QStringList capsheader = capsin.readLine().split(";");
   QStringList capsrec;
 
+  const QStringList hasInputsAccl = {};
+  const QStringList hasSwitchesFlex = {"f16", "mt12", "tx16s", "tx16smk3", "v16"};
+  const QStringList hasSwitchesVoice = {"v16"};
+
   while (!regbdsin.atEnd()) {
     regbdrec = regbdsin.readLine().split(";");
-    if (regbdrec.at(regbdheader.indexOf("hwdef")).isEmpty())
+    const QString hwdef = regbdrec.at(regbdheader.indexOf("hwdef"));
+
+    if (hwdef.isEmpty())
       continue;
 
     QJsonObject obj;
     obj["name"] = regbdrec[regbdheader.indexOf("name")];
     QJsonArray basedOn;
     basedOn.append(regbdrec[regbdheader.indexOf("lcd")]);
+
+    if (hasInputsAccl.contains(hwdef))
+      basedOn.append("inputs_accl");
+
+    if (hasSwitchesFlex.contains(hwdef))
+      basedOn.append("switches_flex");
+
+    if (hasSwitchesVoice.contains(hwdef))
+      basedOn.append("switches_voice");
+
     obj["basedOn"] = basedOn;
+
     if (regbdrec[regbdheader.indexOf("eepromsize")].toInt() > 0)
       obj["eepromSize"] = regbdrec[regbdheader.indexOf("eepromsize")].toInt();;
     if (regbdrec[regbdheader.indexOf("flashsize")].toInt() > 0)
@@ -2241,7 +2288,7 @@ void Board::buildJson()
 
     QJsonDocument doc(obj);
 
-    QFile defn(QString("/utils/edgetx/vscode/bddefs/%1.json").arg(regbdrec[regbdheader.indexOf("hwdef")]));
+    QFile defn(QString("/src/repos/edgetx/edgetx/companion/src/boards/defs/%1.json").arg(regbdrec[regbdheader.indexOf("hwdef")]));
 
     if (defn.open(QIODevice::WriteOnly | QIODevice::Text)) {
       defn.write(doc.toJson(QJsonDocument::Indented));

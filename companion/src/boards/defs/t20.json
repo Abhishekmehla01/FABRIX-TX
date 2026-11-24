@@ -19,7 +19,7 @@
                 "available": [
                     "xjt",
                     "isrm",
-                    "crsf",
+                    "elrs",
                     "multi"
                 ],
                 "default": "crsf"

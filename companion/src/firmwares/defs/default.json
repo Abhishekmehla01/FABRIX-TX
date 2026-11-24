@@ -90,7 +90,7 @@
   },
   "modelSlots": 0,
   "outputs": {
-    "comments": "name: HAS_LARGE_LCD 6 else 4",
+    "comments": "name 4 or 6",
     "cnt": 32,
     "name": 4
   },

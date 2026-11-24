@@ -3,7 +3,8 @@
         "min": 1
     },
     "basedOn": [
-        "color"
+        "color",
+        "switches_flex"
     ],
     "battery": {
         "vmax": 83,
