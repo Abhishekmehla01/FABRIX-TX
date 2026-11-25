@@ -1,0 +1,41 @@
+---
+name: FABRIX firmware build
+on:
+  push:
+    branches:
+      - 'FABRIX'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build FABRIX TX firmware
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/edgetx/edgetx-dev:2.12
+      volumes:
+        - ${{ github.workspace }}:/src
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Build firmware
+        env:
+          FLAVOR: pocket
+          EDGETX_VERSION_SUFFIX: fabrix
+          CMAKE_BUILD_PARALLEL_LEVEL: 4
+        run: |
+          ./tools/build-gh.sh
+          for f in pocket-*.bin; do mv "$f" "fabrix-tx-${f#pocket-}"; done
+          ls -l *.bin
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v7
+        with:
+          name: fabrix-tx-firmware
+          path: |
+            fabrix-tx-*.bin
+            LICENSE
+          retention-days: 30
+          if-no-files-found: error
