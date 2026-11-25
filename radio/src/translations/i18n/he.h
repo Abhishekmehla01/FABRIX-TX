@@ -53,7 +53,7 @@
 #define TR_QM_GLOB_FUNC                 "פונקציות\nגלובליות"
 #define TR_QM_TRAINER                   "טריינר"
 #define TR_QM_HARDWARE                  "חומרה"
-#define TR_QM_ABOUT                     "אודות\nEdgeTX"
+#define TR_QM_ABOUT                     "אודות\nFABRIX"
 #define TR_QM_THEMES                    "ערכות נושא"
 #define TR_QM_TOP_BAR                   "בר עליון"
 #define TR_QM_SCREEN_1                  "מסך 1"
@@ -84,7 +84,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "הגדרות שלט"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "הגדרות ממשק"
 #define TR_MAIN_MENU_STATISTICS         "סטטיסטיקות"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "מידע על EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "מידע על FABRIX"
 #define TR_MAIN_VIEW_X                  "מסך "
 #define TR_MAIN_MENU_THEMES             "ערכות נושא"
 #define TR_MAIN_MENU_APPS               "יישומים"
@@ -955,7 +955,7 @@
 #define TR_INTERNALRF                  "מודול פנימי"
 #define TR_INTERNAL_MODULE             TR("Int. module", "מודול פנימי")
 #define TR_EXTERNAL_MODULE             TR("Ext. module", "מודול חיצוני")
-#define TR_EDGETX_UPGRADE_REQUIRED     "נדרש עדכון EdgeTX"
+#define TR_EDGETX_UPGRADE_REQUIRED     "נדרש עדכון FABRIX"
 #define TR_TELEMETRY_DISABLED          "טלמטריה מושבתת"
 #define TR_MORE_OPTIONS_AVAILABLE      "אפשרויות נוספות זמינות"
 #define TR_NO_MODULE_INFORMATION       "No module information"

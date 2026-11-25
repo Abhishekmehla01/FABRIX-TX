@@ -52,7 +52,7 @@
 #define TR_QM_GLOB_FUNC                 "Global\nFunctions"
 #define TR_QM_TRAINER                   "Trainer"
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "About\nEdgeTX"
+#define TR_QM_ABOUT                     "About\nFABRIX"
 #define TR_QM_THEMES                    "Themes"
 #define TR_QM_TOP_BAR                   "Top Bar"
 #define TR_QM_SCREEN_1                  "Screen 1"
@@ -83,7 +83,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "Radio Setup"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI Setup"
 #define TR_MAIN_MENU_STATISTICS         "Statistics"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "About EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "About FABRIX"
 #define TR_MAIN_VIEW_X                  "Screen "
 #define TR_MAIN_MENU_THEMES                 "THEMES"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -949,7 +949,7 @@
 #define TR_INTERNALRF                  "Interne RF"
 #define TR_INTERNAL_MODULE             TR("Int. module","Internal module")
 #define TR_EXTERNAL_MODULE             TR("Ext. module","External module")
-#define TR_EDGETX_UPGRADE_REQUIRED     "EdgeTX upgrade required"
+#define TR_EDGETX_UPGRADE_REQUIRED     "FABRIX upgrade required"
 #define TR_TELEMETRY_DISABLED          "Telem. disabled"
 #define TR_MORE_OPTIONS_AVAILABLE      "More options available"
 #define TR_NO_MODULE_INFORMATION       "No module information"

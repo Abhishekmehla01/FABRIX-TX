@@ -27,18 +27,11 @@
 
 #include "hal/flash_driver.h"
 
+#include "fabrix_brand.h"
 #if LCD_W < 212
-  #if defined(VERSION_TAG)
-    #define BOOTLOADER_TITLE               " Bootloader - " VERSION_TAG
-  #else
-    #define BOOTLOADER_TITLE               " Bootl." VERSION_PREFIX VERSION VERSION_SUFFIX
-  #endif
+  #define BOOTLOADER_TITLE               " " FABRIX_BRAND " Bootloader"
 #else
-  #if defined(VERSION_TAG)
-    #define BOOTLOADER_TITLE               " EdgeTX Bootloader - " VERSION_TAG
-  #else
-    #define BOOTLOADER_TITLE               " EdgeTX Bootloader - " VERSION_PREFIX VERSION VERSION_SUFFIX
-  #endif
+  #define BOOTLOADER_TITLE               " " FABRIX_BRAND " Bootloader - " FABRIX_FW_VERSION
 #endif
 
 #define DISPLAY_CHAR_WIDTH             (LCD_COLS+4)

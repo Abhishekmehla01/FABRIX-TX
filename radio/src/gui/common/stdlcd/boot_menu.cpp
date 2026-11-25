@@ -19,6 +19,7 @@
  * GNU General Public License for more details.
  */
 
+#include "fabrix_brand.h"
 #include <string.h>
 
 #include "board.h"
@@ -77,13 +78,18 @@ void bootloaderDrawScreen(BootloaderState st, int opt, const char *str)
 
     lcdDrawText(LCD_W / 2, 5 * FH + FH / 2, TR_BL_OR_PLUGIN_USB_CABLE, CENTERED);
 
+    // FABRIX: show brand + build hash instead of the internal version string
     const char * vers = getFirmwareVersion();
-#if LCD_W < 212
-    // Remove "edgetx-" from string
-    if (strncmp(vers, "edgetx-", 7) == 0)
-      vers += 7;
-#endif
-    lcdDrawCenteredText(7 * FH, vers);
+    const char * hash = vers ? strchr(vers, '(') : nullptr;
+    char buf[32];
+    char * p = buf;
+    for (const char * c = FABRIX_MODEL; *c && p < buf + sizeof(buf) - 1; c++) *p++ = *c;
+    if (hash && p < buf + sizeof(buf) - 2) {
+      *p++ = ' ';
+      for (const char * c = hash; *c && p < buf + sizeof(buf) - 1; c++) *p++ = *c;
+    }
+    *p = 0;
+    lcdDrawCenteredText(7 * FH, buf);
     lcdInvertLine(7);
   }
   else if (st == ST_USB) {

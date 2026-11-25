@@ -21,16 +21,13 @@
 
 #include "edgetx.h"
 #include "stamp.h"
+#include "fabrix_brand.h"
 
 #define ABOUT_INDENT 4
 
-#if defined(VERSION_TAG)
-const char ABOUT_VERSION_1[] = "EdgeTX " "(" VERSION_TAG ")" "\036\"" CODENAME "\"";
-#else
-const char ABOUT_VERSION_1[] = "EdgeTX " "(" VERSION_PREFIX VERSION VERSION_SUFFIX ")";
-#endif
-const char ABOUT_VERSION_2[] = "Copyright (C) " BUILD_YEAR " EdgeTX";
-const char ABOUT_VERSION_3[] = "https://edgetx.org";
+const char ABOUT_VERSION_1[] = FABRIX_MODEL " v" FABRIX_FW_VERSION;
+const char ABOUT_VERSION_2[] = "(C) " BUILD_YEAR " " FABRIX_BRAND " & contributors";
+const char ABOUT_VERSION_3[] = FABRIX_LICENSE_LINE;
 
 void menuAboutView(event_t event)
 {

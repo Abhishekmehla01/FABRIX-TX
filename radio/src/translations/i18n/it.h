@@ -50,7 +50,7 @@
 #define TR_QM_GLOB_FUNC                 "Funz.\nGlobali"
 #define TR_QM_TRAINER                   TR("Trainer", "Maestro/Allievo")
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "Info su\nEdgeTX"
+#define TR_QM_ABOUT                     "Info su\nFABRIX"
 #define TR_QM_THEMES                    "Temi"
 #define TR_QM_TOP_BAR                   "Barra sup."
 #define TR_QM_SCREEN_1                  "Schermo 1"
@@ -81,7 +81,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "Settaggi Radio"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "Settaggi Schermo"
 #define TR_MAIN_MENU_STATISTICS         "Statistiche"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "Riguardo EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "Riguardo FABRIX"
 #define TR_MAIN_VIEW_X                  "Schermo "
 #define TR_MAIN_MENU_THEMES                 "TEMI"
 #define TR_MAIN_MENU_APPS               "App"
@@ -956,7 +956,7 @@
 #define TR_INTERNALRF                   "Modulo interno"
 #define TR_INTERNAL_MODULE              TR("Modulo int.", "Modulo interno")
 #define TR_EXTERNAL_MODULE              TR("Modulo est.", "Modulo esterno")
-#define TR_EDGETX_UPGRADE_REQUIRED      "EdgeTX richiede aggiornamento"
+#define TR_EDGETX_UPGRADE_REQUIRED      "FABRIX richiede aggiornamento"
 #define TR_TELEMETRY_DISABLED           TR("Telem. off", "Telem. disabilitata")
 #define TR_MORE_OPTIONS_AVAILABLE       "Altre opzioni assenti"
 #define TR_NO_MODULE_INFORMATION        "Nessuna info del modulo"

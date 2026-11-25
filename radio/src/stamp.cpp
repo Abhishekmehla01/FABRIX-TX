@@ -22,6 +22,7 @@
 #include "definitions.h"
 #include "board.h"
 #include "fw_version.h"
+#include "fabrix_brand.h"
 
 #include <string.h>
 
@@ -65,13 +66,8 @@
   const char date_stamp[]   = "DATE" TAB ": " DATE;
   const char time_stamp[]   = "TIME" TAB ": " TIME;
 #else // B&W / !COLOR_LCD
-  #if defined(VERSION_TAG)
-    const char vers_stamp[] = "FW" TAB ": edgetx-" FLAVOUR "\036VERS" TAB ": " WITH_FACTORY_RELEASE(VERSION_TAG) "\036NAME" ": " CODENAME "\036DATE" TAB ": " DATE " " TIME;
-  #elif defined(FACTORY_RELEASE)
-    const char vers_stamp[] = "FW" TAB ": edgetx-" FLAVOUR "\036VERS" TAB ": Factory (" GIT_STR ")" "\036BUILT BY : EdgeTX" "\036DATE" TAB ": " DATE " " TIME;
-  #else
-    const char vers_stamp[] = "FW" TAB ": edgetx-" FLAVOUR "\036VERS" TAB ": " VERSION_PREFIX VERSION VERSION_SUFFIX "\036GIT#" TAB ": " GIT_STR "\036DATE" TAB ": " DATE " " TIME;
-  #endif
+  // FABRIX: version screen text (see fabrix_brand.h)
+  const char vers_stamp[] = "FW" TAB ": " FABRIX_MODEL "\036VERS" TAB ": " FABRIX_FW_VERSION "\036GIT#" TAB ": " GIT_STR "\036DATE" TAB ": " DATE " " TIME;
 #endif
 
 /**

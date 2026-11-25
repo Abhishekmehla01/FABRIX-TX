@@ -53,7 +53,7 @@
 #define TR_QM_GLOB_FUNC                 "Глобальные\nФункции"
 #define TR_QM_TRAINER                   "Тренер"
 #define TR_QM_HARDWARE                  "Аппаратура"
-#define TR_QM_ABOUT                     "Инфо\nEdgeTX"
+#define TR_QM_ABOUT                     "Инфо\nFABRIX"
 #define TR_QM_THEMES                    "Темы"
 #define TR_QM_TOP_BAR                   "Верхний Бар"
 #define TR_QM_SCREEN_1                  "Экран 1"
@@ -84,7 +84,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "Меню Пульта"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI настройки"
 #define TR_MAIN_MENU_STATISTICS         "Стат-ка Пульта"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "Инфо EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "Инфо FABRIX"
 #define TR_MAIN_VIEW_X                  "Экран "
 #define TR_MAIN_MENU_THEMES                 "ТЕМЫ"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -954,7 +954,7 @@
 #define TR_INTERNALRF                  "Внут TX"
 #define TR_INTERNAL_MODULE             TR("Внут. Модуль", "Внут Модуль")
 #define TR_EXTERNAL_MODULE             TR("Внеш. Модуль", "Внеш Модуль")
-#define TR_EDGETX_UPGRADE_REQUIRED     "EdgeTX требуется обновл"
+#define TR_EDGETX_UPGRADE_REQUIRED     "FABRIX требуется обновл"
 #define TR_TELEMETRY_DISABLED          "Телем. откл"
 #define TR_MORE_OPTIONS_AVAILABLE      "Доступно больше опций"
 #define TR_NO_MODULE_INFORMATION       "Нет инфо о модуле"

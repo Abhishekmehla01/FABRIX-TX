@@ -27,6 +27,7 @@
 #include "hal/usb_driver.h"
 #include "usb_descriptor.h"
 #include "stamp.h"
+#include "fabrix_brand.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,7 +69,7 @@
 #define USBD_VID_PID_CODES                  0x1209    // https://pid.codes
 
 #define USBD_LANGID_STRING                  0x409
-#define USBD_MANUFACTURER_STRING            "OpenTX"
+#define USBD_MANUFACTURER_STRING            FABRIX_BRAND
 #if defined(FIRMWARE_QSPI)
 #define USB_SIZ_STRING_SERIAL               0x1A
 #else

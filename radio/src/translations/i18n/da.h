@@ -51,7 +51,7 @@
 #define TR_QM_GLOB_FUNC                "Global\nfunktioner"
 #define TR_QM_TRAINER                  "Træner"
 #define TR_QM_HARDWARE                 "Hardware"
-#define TR_QM_ABOUT                    "Om\nEdgeTX"
+#define TR_QM_ABOUT                    "Om\nFABRIX"
 #define TR_QM_THEMES                   "Temaer"
 #define TR_QM_TOP_BAR                  "Top bjælke"
 #define TR_QM_SCREEN_1                 "Skærm 1"
@@ -82,7 +82,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS    "Radio Indstilling"
 #define TR_MAIN_MENU_SCREEN_SETTINGS   "UI Setup"
 #define TR_MAIN_MENU_STATISTICS        "Statistik"
-#define TR_MAIN_MENU_ABOUT_EDGETX      "Om EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX      "Om FABRIX"
 #define TR_MAIN_VIEW_X                 "Screen "
 #define TR_MAIN_MENU_THEMES            "TEMAER"
 #define TR_MAIN_MENU_APPS              "Apps"
@@ -957,7 +957,7 @@
 #define TR_INTERNALRF                  "Intern RF"
 #define TR_INTERNAL_MODULE             TR("Int. module", "Intern modul")
 #define TR_EXTERNAL_MODULE             TR("Ext. module", "Eksternt modul")
-#define TR_EDGETX_UPGRADE_REQUIRED     "EdgeTX kræver opgradering"
+#define TR_EDGETX_UPGRADE_REQUIRED     "FABRIX kræver opgradering"
 #define TR_TELEMETRY_DISABLED          "Telem. deaktiveret"
 #define TR_MORE_OPTIONS_AVAILABLE      "Flere tilvalg mulige"
 #define TR_NO_MODULE_INFORMATION       "Ingen modul information"

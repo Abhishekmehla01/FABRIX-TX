@@ -50,7 +50,7 @@
 #define TR_QM_GLOB_FUNC                 "全局\n功能"
 #define TR_QM_TRAINER                   "教練"
 #define TR_QM_HARDWARE                  "硬件"
-#define TR_QM_ABOUT                     "關於\nEdgeTX"
+#define TR_QM_ABOUT                     "關於\nFABRIX"
 #define TR_QM_THEMES                    "主題"
 #define TR_QM_TOP_BAR                   "頂欄"
 #define TR_QM_SCREEN_1                  "屏幕 1"
@@ -949,7 +949,7 @@
 #define TR_INTERNALRF                  "內置發射"
 #define TR_INTERNAL_MODULE             TR("內置發射", "內置發射")
 #define TR_EXTERNAL_MODULE             TR("外置發射", "外置發射")
-#define TR_EDGETX_UPGRADE_REQUIRED     "EdgeTX需要升級"
+#define TR_EDGETX_UPGRADE_REQUIRED     "FABRIX需要升級"
 #define TR_TELEMETRY_DISABLED          "禁用回傳"
 #define TR_MORE_OPTIONS_AVAILABLE      "更多可用選項"
 #define TR_NO_MODULE_INFORMATION       "無模塊信息"

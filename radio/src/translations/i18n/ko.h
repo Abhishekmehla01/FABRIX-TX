@@ -50,7 +50,7 @@
 #define TR_QM_GLOB_FUNC                 "Global\nFunctions"
 #define TR_QM_TRAINER                   "Trainer"
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "About\nEdgeTX"
+#define TR_QM_ABOUT                     "About\nFABRIX"
 #define TR_QM_THEMES                    "Themes"
 #define TR_QM_TOP_BAR                   "Top Bar"
 #define TR_QM_SCREEN_1                  "Screen 1"
@@ -81,7 +81,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS       "조종기\n설정"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI Setup"
 #define TR_MAIN_MENU_STATISTICS           "비행\n기록"
-#define TR_MAIN_MENU_ABOUT_EDGETX         "EdgeTX\n정보"
+#define TR_MAIN_MENU_ABOUT_EDGETX         "FABRIX\n정보"
 #define TR_MAIN_VIEW_X                  "Screen "
 #define TR_MAIN_MENU_THEMES                   "테마"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -995,7 +995,7 @@
 #define TR_INTERNALRF                     "내장 RF"
 #define TR_INTERNAL_MODULE                TR("내장 모듈", "내부 RF 모듈")
 #define TR_EXTERNAL_MODULE                TR("외장 모듈", "외부 RF 모듈")
-#define TR_EDGETX_UPGRADE_REQUIRED        "EdgeTX 업그레이드 필요"
+#define TR_EDGETX_UPGRADE_REQUIRED        "FABRIX 업그레이드 필요"
 #define TR_TELEMETRY_DISABLED             "텔레메트리 비활성화됨"
 #define TR_MORE_OPTIONS_AVAILABLE         "추가 옵션 사용 가능"
 #define TR_NO_MODULE_INFORMATION          "모듈 정보 없음"

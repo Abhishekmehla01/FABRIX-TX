@@ -52,7 +52,7 @@
 #define TR_QM_GLOB_FUNC                 "Global\nFunctions"
 #define TR_QM_TRAINER                   "Trainer"
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "About\nEdgeTX"
+#define TR_QM_ABOUT                     "About\nFABRIX"
 #define TR_QM_THEMES                    "Themes"
 #define TR_QM_TOP_BAR                   "Top Bar"
 #define TR_QM_SCREEN_1                  "Screen 1"
@@ -83,7 +83,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "Радіо Налаштування"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI Setup"
 #define TR_MAIN_MENU_STATISTICS         "Статистика"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "Про... EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "Про... FABRIX"
 #define TR_MAIN_VIEW_X                  "Screen "
 #define TR_MAIN_MENU_THEMES                "ТЕМИ"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -953,7 +953,7 @@
 #define TR_INTERNALRF                  "Внутрійшній RF"
 #define TR_INTERNAL_MODULE             TR("Внутр. модуль", "Внутрішній модуль")
 #define TR_EXTERNAL_MODULE             TR("Зовн. модуль", "Зовнішній модуль")
-#define TR_EDGETX_UPGRADE_REQUIRED     "Потрібне оновлення EdgeTX"
+#define TR_EDGETX_UPGRADE_REQUIRED     "Потрібне оновлення FABRIX"
 #define TR_TELEMETRY_DISABLED          "Телем. вимкнуто"
 #define TR_MORE_OPTIONS_AVAILABLE      "Доступні додаткові опції"
 #define TR_NO_MODULE_INFORMATION       "Інформація по модулю відсутня"

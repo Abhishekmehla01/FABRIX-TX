@@ -42,9 +42,9 @@
   #define USB_MANUFACTURER             'R', 'M', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */
   #define USB_PRODUCT                  'R', 'M', ' ', 'G', 'X', '1', '2', ' '  /* 8 Bytes */
 #elif defined(RADIO_POCKET)
-  #define USB_NAME                     "Radiomaster Pocket"
-  #define USB_MANUFACTURER             'R', 'M', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */
-  #define USB_PRODUCT                  'R', 'M', 'P', 'o', 'c', 'k', 'e', 't'  /* 8 Bytes */
+  #define USB_NAME                     "FABRIX TX"  /* FABRIX */
+  #define USB_MANUFACTURER             'F', 'A', 'B', 'R', 'I', 'X', ' ', ' '  /* 8 bytes */
+  #define USB_PRODUCT                  'F', 'A', 'B', 'R', 'I', 'X', 'T', 'X'  /* 8 Bytes */
 #elif defined(RADIO_T8)
   #define USB_NAME                     "Radiomaster T8"
   #define USB_MANUFACTURER             'R', 'M', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */

@@ -50,7 +50,7 @@
 #define TR_QM_GLOB_FUNC                 "Global\nFunctions"
 #define TR_QM_TRAINER                   "Trainer"
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "About\nEdgeTX"
+#define TR_QM_ABOUT                     "About\nFABRIX"
 #define TR_QM_THEMES                    "Themes"
 #define TR_QM_TOP_BAR                   "Top Bar"
 #define TR_QM_SCREEN_1                  "Screen 1"
@@ -81,7 +81,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "送信機 設定"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI Setup"
 #define TR_MAIN_MENU_STATISTICS         "統計情報"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "EdgeTX について"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "FABRIX について"
 #define TR_MAIN_VIEW_X                  "Screen "
 #define TR_MAIN_MENU_THEMES                 "テーマ"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -951,7 +951,7 @@
 #define TR_INTERNALRF                  "内部RFモジュール"
 #define TR_INTERNAL_MODULE             TR("Int. module", "内部モジュール")
 #define TR_EXTERNAL_MODULE             TR("Ext. module", "外部モジュール")
-#define TR_EDGETX_UPGRADE_REQUIRED     "EdgeTXアップグレードが必要です"
+#define TR_EDGETX_UPGRADE_REQUIRED     "FABRIXアップグレードが必要です"
 #define TR_TELEMETRY_DISABLED          "テレメトリー無効"
 #define TR_MORE_OPTIONS_AVAILABLE      "その他のオプション"
 #define TR_NO_MODULE_INFORMATION       "モジュール情報なし"

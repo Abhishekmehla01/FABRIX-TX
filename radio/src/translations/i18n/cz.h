@@ -52,7 +52,7 @@
 #define TR_QM_GLOB_FUNC                 "Global\nFunctions"
 #define TR_QM_TRAINER                   "Trainer"
 #define TR_QM_HARDWARE                  "Hardware"
-#define TR_QM_ABOUT                     "About\nEdgeTX"
+#define TR_QM_ABOUT                     "About\nFABRIX"
 #define TR_QM_THEMES                    "Themes"
 #define TR_QM_TOP_BAR                   "Top Bar"
 #define TR_QM_SCREEN_1                  "Screen 1"
@@ -83,7 +83,7 @@
 #define TR_MAIN_MENU_RADIO_SETTINGS     "Nastavení rádia"
 #define TR_MAIN_MENU_SCREEN_SETTINGS    "UI Setup"
 #define TR_MAIN_MENU_STATISTICS         "Statistiky"
-#define TR_MAIN_MENU_ABOUT_EDGETX       "O EdgeTX"
+#define TR_MAIN_MENU_ABOUT_EDGETX       "O FABRIX"
 #define TR_MAIN_VIEW_X                  "Screen "
 #define TR_MAIN_MENU_THEMES                 "Motivy"
 #define TR_MAIN_MENU_APPS               "Apps"
@@ -951,7 +951,7 @@
 #define TR_INTERNALRF                  "Interní RF modul"
 #define TR_INTERNAL_MODULE             "Interní modul"
 #define TR_EXTERNAL_MODULE             "Externí modul"
-#define TR_EDGETX_UPGRADE_REQUIRED     TR("Aktualizujte EdgeTX", "Vyžadována aktualizace EdgeTX")
+#define TR_EDGETX_UPGRADE_REQUIRED     TR("Aktualizujte FABRIX", "Vyžadována aktualizace FABRIX")
 #define TR_TELEMETRY_DISABLED          "Telem. zakázána"
 #define TR_MORE_OPTIONS_AVAILABLE      TR("Více možností", "Více dostupných možností")
 #define TR_NO_MODULE_INFORMATION       "Žádné info o modulu"
